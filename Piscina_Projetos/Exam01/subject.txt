@@ -1,0 +1,8 @@
+a ideia do exercício é:
+
+escrever uma função que recebe um parâmetro: um ponteiro para um inteio
+(int *ptr)
+
+esta função deve incrementar por 1 o inteiro apontado pelo ponteiro recebido
+
+
