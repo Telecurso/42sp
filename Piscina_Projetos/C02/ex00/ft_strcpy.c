@@ -1,29 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_inc.c                                           :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plucas-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 15:15:59 by plucas-s          #+#    #+#             */
-/*   Updated: 2025/06/06 16:45:36 by plucas-s         ###   ########.fr       */
+/*   Created: 2025/06/16 15:59:21 by plucas-s          #+#    #+#             */
+/*   Updated: 2025/06/16 18:01:37 by plucas-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_inc(int *ptr)
+char	*ft_strcpy(char *dest, char *src)
 {
-	(*ptr)++;
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
 
 int	main(void)
 {
-	int	n;	
+	char	origem[] = "Teste de programa em C!";
+	char	destino[50];
 
-	*n = 5;
-	printf("Before %d\n", n);
-	ft_inc(&n);
-	printf("After %d\n", n);
-	return(0);
+	printf("Source String: '%s'\n", origem);
+	printf("Destiny BEFORE apply function: '%s'\n", destino);
+	ft_strcpy(destino, origem);
+	printf("Destiny AFTER apply ft_strcpy: '%s'\n", destino);
+	return (0);
 }
