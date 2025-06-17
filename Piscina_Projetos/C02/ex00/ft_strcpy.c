@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -25,7 +25,7 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	origem[] = "Teste de programa em C!";
@@ -37,3 +37,4 @@ int	main(void)
 	printf("Destiny AFTER apply ft_strcpy: '%s'\n", destino);
 	return (0);
 }
+*/
